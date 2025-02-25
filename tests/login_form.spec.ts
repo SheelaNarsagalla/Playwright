@@ -10,7 +10,7 @@ test('Dublin Schools - Automate Login for Parent Portal', async ({ page }) => {
   console.log("Clicked Parent Portal button");
 
   // 3️⃣ Manually navigate to the Parent Portal URL to ensure the correct page loads
-  await page.waitForTimeout(2000); // Wait to ensure navigation starts
+  await page.waitForURL; // Wait to ensure navigation starts
   await page.goto('https://icampus.dublinusd.org/campus/portal/dublin.jsp'); // Explicitly go to the parent portal page
   console.log("Navigated to Parent Portal Page");
 
